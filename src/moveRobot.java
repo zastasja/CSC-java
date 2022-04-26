@@ -10,27 +10,33 @@ public class moveRobot {
 
         public Direction getDirection() {
             // текущее направление взгляда
+            return getDirection();
         }
 
         public int getX() {
             // текущая координата X
+            return getY();
         }
 
         public int getY() {
             // текущая координата Y
+            return getY();
         }
 
         public void turnLeft() {
             // повернуться на 90 градусов против часовой стрелки
+            return;
         }
 
         public void turnRight() {
             // повернуться на 90 градусов по часовой стрелке
+            return;
         }
 
         public void stepForward() {
             // шаг в направлении взгляда
             // за один шаг робот изменяет одну свою координату на единицу
+            return;
         }
     }
     public static void moveRobot(Robot robot, int toX, int toY) {
@@ -70,8 +76,5 @@ public class moveRobot {
                 robot.stepForward();
             }
         }
-
-
-        robot.stepForward(); // your implementation here
     }
 }
