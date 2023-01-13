@@ -3,13 +3,14 @@
 // Гарантируется, что входное значение — неотрицательное.
 // Формат вывода: h:mm:ss (возможные значения: [0:00:00; 23:59:59]).
 
-import  java.util.Scanner;
+// import  java.util.Scanner;
 
 class DigitalWatch {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Введите секунды:");
-    int seconds = sc.nextInt();
+//     Scanner sc = new Scanner(System.in);
+    System.out.print("Введите секунды:");
+//     int seconds = sc.nextInt();
+    int seconds = System.in.read();
     int s = seconds % 60;
     String sec = s < 10 ? "0" + Integer.toString(s): "" + s;
     int m = (seconds / 60) % 60;
